@@ -2,6 +2,7 @@ require "rdio_api/version"
 require 'faraday'
 require 'faraday_middleware'
 
+require 'rdio_api/core'
 require 'rdio_api/client'
 
 module RdioApi
