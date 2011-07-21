@@ -25,7 +25,7 @@ module RdioApi
       params[:consumer_secret] = @consumer_secret if @consumer_secret
       params[:access_token] = @access_token if @access_token
       @connection ||= Faraday::Connection.new(:url => api_url) do |builder|
-        builder.use Faraday::Request::OAuth, params
+        builder.use Faraday::Request::OAuth2, params
         builder.use Faraday::Request::UrlEncoded
         builder.use Faraday::Response::Mashify 
         builder.use Faraday::Response::ParseJson
