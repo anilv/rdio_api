@@ -4,8 +4,7 @@ module RdioApi
   
   class Client
     
-    include Core
-    include Catalog
+    include Api
     
     attr_reader :consumer_key, :consumer_secret, :access_token
     
