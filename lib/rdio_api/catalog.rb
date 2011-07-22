@@ -26,15 +26,10 @@ module RdioApi
       check_response_for_errors(response)
     end
     
-    def search(query, types, never_or=nil, extras=nil, start=nil, count=nil)
+    def search(arguments={})
       response = connection.post do |request|
         request.body = { :method => 'search',
-                         :query => query,
-                         :types => types,
-                         :never_or => never_or,
-                         :extras => extras,
-                         :start => start,
-                         :count => count }
+                         :arguments => arguments }
       end
     end
     
