@@ -1,3 +1,5 @@
+require 'helper'
+
 describe RdioApi::Client do
   
   it "should use the correct url for api requests" do
