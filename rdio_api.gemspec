@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{A Ruby wrapper for the Rdio API}
   s.description = %q{A Ruby wrapper for the Rdio API}
   
+  s.add_development_dependency 'rake', '~> 0.9'
   s.add_development_dependency 'rspec', '~> 2.6'
   s.add_development_dependency 'webmock', '~>1.6'
   s.add_development_dependency 'yard', '~>0.7'
