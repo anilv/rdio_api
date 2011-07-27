@@ -14,7 +14,7 @@ describe RdioApi::Client do
       end
 
       it "should have the correct Artist name" do
-        @client.get(:keys => "r13700").r13700.name.should eq("John Williams")
+        @client.get(:keys => "r13700").result.r13700.name.should eq("John Williams")
       end
     end
   end
