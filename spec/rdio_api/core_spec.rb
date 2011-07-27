@@ -8,13 +8,17 @@ describe RdioApi::Client do
     end
     
     describe "'get'" do
-      before do
-        stub_post.with(:body => {:method => 'get', :keys => "r13700"}).
-          to_return(:body => fixture("get.json"))
-      end
+      
+      context "with keys passed" do
+        before do
+          stub_post.with(:body => {:method => 'get', :keys => "r13700"}).
+            to_return(:body => fixture("get.json"))
+        end
 
-      it "should have the correct Artist name" do
-        @client.get(:keys => "r13700").result.r13700.name.should eq("John Williams")
+        it "should have the correct Artist name" do
+          results = @client.get(:keys => "r13700").result
+          results.r13700.name.should eq("John Williams")
+        end
       end
     end
   end
