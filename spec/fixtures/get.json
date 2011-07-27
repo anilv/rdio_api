@@ -1,0 +1,16 @@
+{
+    "status" :"ok",
+    "result" : {
+        "r13700" : {
+                "name" : "John Williams",
+            "hasRadio" : false,
+            "baseIcon" : "artist/4/8/5/0000000000003584/square-200.jpg",
+            "shortUrl" : "http://rd.io/x/Qi132w",
+              "length" : 2075,
+                 "url" : "/artist/John_Williams/",
+                 "key" : "r13700",
+                "type" : "r",
+                "icon" : "http://media.rd.io/artist/4/8/5/0000000000003584/square-200.jpg"
+        }
+    }
+}
