@@ -36,9 +36,5 @@ module RdioApi
     def api_url
       ("http://api.rdio.com/1/").freeze
     end
-    
-    def check_response_for_errors(response)
-     response.body.status == "ok" ? response.body.result : response.body.message
-    end
   end
 end

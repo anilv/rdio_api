@@ -6,7 +6,7 @@ module RdioApi
       response = connection.post do |request|
         request.body = {:method => method_name.to_s}.merge!(Hash[*arguments.flatten])
       end
-      check_response_for_errors(response)
+      response.body
     end
   end
 end
