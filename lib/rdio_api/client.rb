@@ -4,7 +4,8 @@ module RdioApi
     
     include Api
     
-    attr_reader :consumer_key, :consumer_secret, :access_token
+    attr_reader :consumer_key, :consumer_secret 
+    attr_accessor :access_token
     
     # Initialize the client for API request. A consumer key and consumer secret are required. 
     # Requests on behalf of the user require access_token (oauth token)
@@ -15,14 +16,15 @@ module RdioApi
       @access_token    = options[:access_token]
     end
     
+    private
+
     # Set up the connection to use for all requests based on the options from intialization. 
-    
-    def connection
+
+    def unauthenticated_connection
       params = {}
-      params[:consumer_key] = @consumer_key if @consumer_key
-      params[:consumer_secret] = @consumer_secret if @consumer_secret
-      params[:access_token] = @access_token if @access_token
-      @connection ||= Faraday::Connection.new(:url => api_url) do |builder|
+      params[:consumer_key] = @consumer_key 
+      params[:consumer_secret] = @consumer_secret 
+      @connection ||= Faraday.new(:url => api_url) do |builder|
         builder.use Faraday::Request::OAuth, params
         builder.use Faraday::Request::UrlEncoded
         builder.use Faraday::Response::Mashify 
@@ -30,9 +32,13 @@ module RdioApi
         builder.adapter Faraday.default_adapter
       end
     end
-    
+
+    def authenticated_connection
+      @access_token
+    end
+
     # Base URL for api requests
-    
+
     def api_url
       ("http://api.rdio.com/1/").freeze
     end
