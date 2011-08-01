@@ -4,7 +4,7 @@ describe RdioApi::Client do
   
   context "when working with the Core methods" do
     before do
-      @client = RdioApi::Client.new(:consumer_key => "consumerkey", :consumer_secret => "consumersecret")
+      @client = RdioApi.new(:consumer_key => "consumerkey", :consumer_secret => "consumersecret")
     end
     
     describe "'get'" do
@@ -16,7 +16,7 @@ describe RdioApi::Client do
         end
 
         it "should have the correct Artist name" do
-          results = @client.get(:keys => "r13700").result
+          results = @client.get(:keys => "r13700")
           results.r13700.name.should eq("John Williams")
         end
       end

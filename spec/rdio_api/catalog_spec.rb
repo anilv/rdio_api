@@ -4,7 +4,7 @@ describe RdioApi::Client do
   
   context "when working with the Catalog methods" do
     before do
-      @client = RdioApi::Client.new(:consumer_key => "consumerkey", :consumer_secret => "consumersecret")
+      @client = RdioApi.new(:consumer_key => "consumerkey", :consumer_secret => "consumersecret")
     end
     
     describe "'getAlbumsForArtist'" do
@@ -16,7 +16,7 @@ describe RdioApi::Client do
         end
 
         it "should return Array of Albums" do
-          albums = @client.getAlbumsForArtist(:artist => "r20227").result
+          albums = @client.getAlbumsForArtist(:artist => "r20227")
           albums.should be_an Array
           albums.first.name.should eq("My Beautiful Dark Twisted Fantasy")
         end
@@ -32,7 +32,7 @@ describe RdioApi::Client do
         end
         
         it "should return Array of Tracks" do
-          tracks = @client.getTracksForArtist(:artist => "r311065").result
+          tracks = @client.getTracksForArtist(:artist => "r311065")
           tracks.should be_an Array
           tracks.last.duration.should eq(121)
         end
@@ -48,12 +48,12 @@ describe RdioApi::Client do
         end
         
         it "should have correct track count" do
-          results = @client.search(:query => "michael giacchino", :types => "album").result
+          results = @client.search(:query => "michael giacchino", :types => "album")
           results.track_count.should eq(708)
         end
         
         it "should include correct track for a result" do
-          results = @client.search(:query => "michael giacchino", :types => "album").result
+          results = @client.search(:query => "michael giacchino", :types => "album")
           results.results.first.trackKeys.should include("t9506546")
         end
       end
@@ -68,7 +68,7 @@ describe RdioApi::Client do
         end
         
         it "should the correct radioKey" do
-          suggestions = @client.searchSuggestions(:query => "yoav").result
+          suggestions = @client.searchSuggestions(:query => "yoav")
           suggestions.first.radioKey.should eq("rr316321")
         end
       end
