@@ -17,7 +17,7 @@ module RdioApi
                                              {:method => method_sym.to_s}.merge!(Hash[*arguments.flatten])).body)['result'])
           
          else
-          "Set access token at intialization or the client's access_token instance variable"
+          "Set access token at initialization or the client's access_token instance variable"
          end
        else
          "Unknown Method, please refer to http://developer.rdio.com/docs/read/rest/Methods for a list"

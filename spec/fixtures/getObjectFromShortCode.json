@@ -1,16 +1,34 @@
 {
     "status" :"ok",
-    "result" : {
-        "r13700" : {
-                "name" : "John Williams",
-            "hasRadio" : false,
-            "baseIcon" : "artist/4/8/5/0000000000003584/square-200.jpg",
-            "shortUrl" : "http://rd.io/x/Qi132w",
-              "length" : 2075,
-                 "url" : "/artist/John_Williams/",
-                 "key" : "r13700",
-                "type" : "r",
-                "icon" : "http://media.rd.io/artist/4/8/5/0000000000003584/square-200.jpg"
-        }
-    }
+    "result" : [
+		{
+		 "baseIcon": "album/d/5/f/0000000000095f5d/square-200.jpg", 
+		 "canDownloadAlbumOnly": false, 
+		 "artistUrl": "/artist/Ratatat/", 
+		 "duration": 226, 
+		 "album": "Classics", 
+		 "isClean": false, 
+		 "albumUrl": "/artist/Ratatat/album/Classics/", 
+		 "shortUrl": "http://rd.io/x/QDaXKzMuLA", 
+		 "albumArtist": "Ratatat", 
+		 "canStream": false, 
+		 "embedUrl": "http://rd.io/e/QDaXKzMuLA", 
+		 "type": "t", 
+		 "price": "None", 
+		 "trackNum": 6, 
+		 "albumArtistKey": "r311065", 
+		 "key": "t7369086", 
+		 "icon": "http://media.rd.io/album/d/5/f/0000000000095f5d/square-200.jpg", 
+		 "canSample": true, 
+		 "name": "Loud Pipes", 
+		 "isExplicit": false, 
+		 "artist": "Ratatat", 
+		 "url": "/artist/Ratatat/album/Classics/track/Loud_Pipes/", 
+		 "albumKey": "a614237", 
+		 "artistKey": "r311065", 
+		 "canDownload": false, 
+		 "length": 1, 
+		 "canTether": false
+		}
+	]
 }
