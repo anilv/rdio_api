@@ -28,9 +28,8 @@ describe RdioApi::Client do
     
     context "and methods that require authentication " do
       
-      let(:access_token) do
-        @client.authorized_connection
-        @client.authorized_connection.post
+      before do
+        @client.access_token = test_access_token
       end
       
       describe "'getObjectFromShortCode'" do
@@ -43,6 +42,19 @@ describe RdioApi::Client do
         it "should have the correct Track name " do
           results = @client.getObjectFromShortCode(:short_code => "QisyLj0")
           results.name.should eq("Loud Pipes")
+        end
+      end
+      
+      describe "'getObjectFromUrl" do
+        
+        before do
+          stub_post.with(:body => {:method => 'getObjectFromUrl', :url => "/artist/James_Horner/" }).
+            to_return(:body => fixture("getObjectFromUrl.json"))
+        end
+        
+        it "should have the corrent topSongsKey" do
+          results = @client.getObjectFromUrl(:url => "/artist/James_Horner/")
+          results.topSongsKey.should eq("tr35187")
         end
       end
     end

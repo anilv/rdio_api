@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 2.6'
   s.add_development_dependency 'webmock', '~>1.6'
   s.add_development_dependency 'yard', '~>0.7'
+  s.add_development_dependency 'oauth', '~>0.4.5'
   
   s.add_runtime_dependency 'hashie', '~> 1.0.0'
   s.add_runtime_dependency 'faraday', '~> 0.6.1'

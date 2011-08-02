@@ -1,6 +1,6 @@
 {
     "status" :"ok",
-    "result" : [
+    "result" : 
 		{
 		 "baseIcon": "album/d/5/f/0000000000095f5d/square-200.jpg", 
 		 "canDownloadAlbumOnly": false, 
@@ -30,5 +30,4 @@
 		 "length": 1, 
 		 "canTether": false
 		}
-	]
 }
