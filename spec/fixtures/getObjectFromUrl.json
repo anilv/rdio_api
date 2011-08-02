@@ -1,0 +1,16 @@
+{
+    "status" :"ok",
+    "result" : {
+	 "name": "James Horner", 
+	 "topSongsKey": "tr35187", 
+	 "hasRadio": true, 
+	 "baseIcon": "artist/no-artist-image-square.jpg", 
+	 "shortUrl": "http://rd.io/x/QDaXLcos", 
+	 "length": 484, 
+	 "url": "/artist/James_Horner/", 
+	 "key": "r35187", 
+	 "radioKey": "rr35187", 
+	 "type": "r", 
+	 "icon": "http://media.rd.io/artist/no-artist-image-square.jpg"
+	}
+}
