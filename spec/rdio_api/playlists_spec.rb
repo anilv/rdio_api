@@ -30,7 +30,7 @@ describe RdioApi::Client do
       
       it "should add to track to playlist" do
         results = @client.addToPlaylist(:playlist => "p200057", :tracks => "t1945475")
-        results.result.should eq("true")
+        results.should eq("true")
       end
     end
     
@@ -53,7 +53,7 @@ describe RdioApi::Client do
       
       it "should return true(collaborating should be false)" do
         results = @client.setPlaylistCollaborating(:playlist => "p200057", :collaborating => "false")
-        results.result.should eq("true")
+        results.should eq("true")
       end
     end
     
@@ -65,7 +65,7 @@ describe RdioApi::Client do
       
       it "should set collaboration mode to playlist followers and return true" do
         results = @client.setPlaylistCollaborationMode(:playlist => "p200057", :mode => "2")
-        results.result.should eq("true")
+        results.should eq("true")
       end
     end
     
@@ -78,7 +78,7 @@ describe RdioApi::Client do
       
       it "should change Playlist fields" do
         results = @client.setPlaylistFields(:playlist => "p200057", :name => "RdioApi RubyGem", :description => "A Test Playlist")
-        results.result.should eq("true")
+        results.should eq("true")
       end
     end
     
@@ -90,7 +90,7 @@ describe RdioApi::Client do
       
       it "should set new Playlist order " do
         results = @client.setPlaylistOrder(:playlist => "p200057", :track => "t3483614, t1945474, t1945475")
-        results.result.should eq("true")
+        results.should eq("true")
       end
     end
     
@@ -103,7 +103,7 @@ describe RdioApi::Client do
       
       it "should remove track from Playlist" do
         results = @client.removeFromPlaylist(:playlist => "p200057", :index => "2", :count => "1", :tracks => "t1945475")
-        results.result.should eq("true")
+        results.should eq("true")
       end
     end
     
@@ -115,7 +115,7 @@ describe RdioApi::Client do
       
       it "should delete the playlist" do
         results = @client.deletePlaylist(:playlist => "p200057")
-        results.result.should eq("true")
+        results.should eq("true")
       end
     end
   end

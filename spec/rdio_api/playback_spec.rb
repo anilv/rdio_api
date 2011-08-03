@@ -15,7 +15,7 @@ describe RdioApi::Client do
 
       it "should return a Playback Token" do
         results = @client.getPlaybackToken
-        results.result.should eq("flkasdjFA5lkdjf90asdfli2l9cnlkasdj9")
+        results.should eq("flkasdjFA5lkdjf90asdfli2l9cnlkasdj9")
       end
     end
   end

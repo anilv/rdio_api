@@ -20,7 +20,7 @@ describe RdioApi::Client do
         
         it "should add Friend" do
           results = @client.addFriend(:user => "s12345")
-          results.result.should eq("true")
+          results.should eq("true")
         end
       end
       
@@ -32,7 +32,7 @@ describe RdioApi::Client do
         
         it "should remove Friend" do
           results = @client.removeFriend(:user => "s12345")
-          results.result.should eq("true")
+          results.should eq("true")
         end
       end
       

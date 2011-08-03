@@ -20,7 +20,7 @@ describe RdioApi::Client do
         
         it "should add track to Collection" do
           results = @client.addToCollection(:keys => "t3802391")
-          results.result.should eq("true")
+          results.should eq("true")
         end
       end
       
@@ -32,7 +32,7 @@ describe RdioApi::Client do
         
         it "should remove track from Collection" do
           results = @client.removeFromCollection(:keys => "t3802391")
-          results.result.should eq("true")
+          results.should eq("true")
         end
       end
       
@@ -44,7 +44,7 @@ describe RdioApi::Client do
         
         it "should return true with setting track available offline" do
           results = @client.setAvailableOffline(:keys => "t1945474", :offline => "true")
-          results.result.should eq("true")
+          results.should eq("true")
         end
       end
     end
