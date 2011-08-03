@@ -12,7 +12,7 @@ describe RdioApi::Client do
         @client.access_token = test_access_token
       end
       
-      describe "'addToCollection" do
+      describe "'addToCollection'" do
         before do
           stub_post.with(:body => {:method => 'addToCollection', :keys => "t3802391"}).
             to_return(:body => fixture("addToCollection.json"))
@@ -63,7 +63,7 @@ describe RdioApi::Client do
         end
       end
       
-      describe "'getAlbumsInCollection" do
+      describe "'getAlbumsInCollection'" do
         before do
           stub_post.with(:body => {:method => 'getAlbumsInCollection', :user => "s27093"}).
             to_return(:body => fixture("getAlbumsInCollection.json"))
@@ -75,7 +75,7 @@ describe RdioApi::Client do
         end
       end
       
-      describe "'getArtistsInCollection" do
+      describe "'getArtistsInCollection'" do
         before do
           stub_post.with(:body => {:method => 'getArtistsInCollection', :user => "s27093"}).
             to_return(:body => fixture("getArtistsInCollection.json"))

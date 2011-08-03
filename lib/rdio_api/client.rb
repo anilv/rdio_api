@@ -4,7 +4,7 @@ module RdioApi
     
     include Api
     
-    attr_reader :consumer_key, :consumer_secret 
+    attr_reader   :consumer_key, :consumer_secret 
     attr_accessor :access_token
     
     # Initialize the client for API request. A consumer key and consumer secret are required. 
@@ -32,7 +32,9 @@ module RdioApi
         builder.adapter Faraday.default_adapter
       end
     end
-
+    
+    # Sets the access token to make authenticated calls
+    
     def authenticated_connection
       @access_token
     end

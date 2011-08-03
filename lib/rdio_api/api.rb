@@ -15,7 +15,6 @@ module RdioApi
          if authenticated_connection
            Hashie::Mash.new(MultiJson.decode(authenticated_connection.post(api_url, 
                                              {:method => method_sym.to_s}.merge!(Hash[*arguments.flatten])).body)['result'])
-          
          else
           "Set access token at initialization or the client's access_token instance variable"
          end

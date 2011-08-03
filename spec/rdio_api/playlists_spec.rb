@@ -34,7 +34,7 @@ describe RdioApi::Client do
       end
     end
     
-    describe "'getPlaylists" do
+    describe "'getPlaylists'" do
       before do
         stub_post.with(:body => {:method => 'getPlaylists'}).to_return(:body => fixture("getPlaylists.json"))
       end

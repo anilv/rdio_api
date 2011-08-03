@@ -43,7 +43,7 @@ describe RdioApi::Client do
         end
       end
       
-      describe "'getObjectFromUrl" do
+      describe "'getObjectFromUrl'" do
         before do
           stub_post.with(:body => {:method => 'getObjectFromUrl', :url => "/artist/James_Horner/" }).
             to_return(:body => fixture("getObjectFromUrl.json"))

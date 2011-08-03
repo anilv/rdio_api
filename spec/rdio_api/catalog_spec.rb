@@ -59,7 +59,7 @@ describe RdioApi::Client do
       end
     end
     
-    describe "searchSuggestions" do
+    describe "'searchSuggestions'" do
       
       context "with query passed" do
         before do

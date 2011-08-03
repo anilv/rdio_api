@@ -12,7 +12,7 @@ describe RdioApi::Client do
         @client.access_token = test_access_token
       end
       
-      describe "'addFriend" do
+      describe "'addFriend'" do
         before do
           stub_post.with(:body => {:method => 'addFriend', :user => "s12345"}).
             to_return(:body => fixture("addFriend.json"))
