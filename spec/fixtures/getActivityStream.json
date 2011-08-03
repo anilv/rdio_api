@@ -1,0 +1,18 @@
+{
+    "status" :"ok",
+    "result" : {
+	 "last_id": 0, 
+	 "user": {
+	  "firstName": "Anil", 
+	  "baseIcon": "user/no-user-image-square.jpg", 
+	  "gender": "m", 
+	  "url": "/people/anilv/", 
+	  "key": "s27093", 
+	  "lastName": "V", 
+	  "libraryVersion": 110, 
+	  "type": "s", 
+	  "icon": "http://media.rd.io/user/no-user-image-square.jpg"
+	 }, 
+	 "updates": []
+	}
+}
