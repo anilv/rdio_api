@@ -1,0 +1,27 @@
+{
+    "status" :"ok",
+    "result" : [
+	 {
+	  "firstName": "Ruby", 
+	  "baseIcon": "user/no-user-image-square.jpg", 
+	  "gender": "m", 
+	  "url": "/people/rubygithubber/", 
+	  "key": "s12346", 
+	  "lastName": "Githubber", 
+	  "libraryVersion": 0, 
+	  "type": "s", 
+	  "icon": "http://media.rd.io/user/no-user-image-square.jpg"
+	 }, 
+	 {
+	  "firstName": "Rdio", 
+	  "baseIcon": "user/no-user-image-square.jpg", 
+	  "gender": "f", 
+	  "url": "/people/rdioapi/", 
+	  "key": "s12347", 
+	  "lastName": "Api", 
+	  "libraryVersion": 80, 
+	  "type": "s", 
+	  "icon": "http://media.rd.io/user/no-user-image-square.jpg"
+	 }
+	]
+}
