@@ -50,6 +50,7 @@ module RdioApi
       :getObjectFromUrl,
       :addToCollection,
       :removeFromCollection,
+      :setAvailableOffline,
       :addToPlaylist,
       :createPlaylist,
       :deletePlaylist,

@@ -1,0 +1,34 @@
+{
+    "status" :"ok",
+    "result" : [
+	 {
+	  "baseIcon": "album/9/5/2/000000000004b259/square-200.jpg", 
+	  "canDownloadAlbumOnly": true, 
+	  "artistUrl": "/artist/Arkngthand/", 
+	  "duration": 340, 
+	  "album": "Songs of Ice and Fire", 
+	  "isClean": false, 
+	  "albumUrl": "/artist/Arkngthand/album/Songs_of_Ice_and_Fire_1/", 
+	  "shortUrl": "http://rd.io/x/QDaXK3laRQ", 
+	  "albumArtist": "Arkngthand", 
+	  "canStream": false, 
+	  "embedUrl": "http://rd.io/e/QDaXK3laRQ", 
+	  "type": "t", 
+	  "price": "0.99", 
+	  "trackNum": 5, 
+	  "albumArtistKey": "r350868", 
+	  "key": "t3802391", 
+	  "icon": "http://media.rd.io/album/9/5/2/000000000004b259/square-200.jpg", 
+	  "canSample": true, 
+	  "name": "A Game of Thrones", 
+	  "isExplicit": false, 
+	  "artist": "Arkngthand", 
+	  "url": "/artist/Arkngthand/album/Songs_of_Ice_and_Fire_1/track/A_Game_of_Thrones/", 
+	  "albumKey": "a307801", 
+	  "artistKey": "r350868", 
+	  "canDownload": true, 
+	  "length": 1, 
+	  "canTether": false
+	 }
+	]
+}

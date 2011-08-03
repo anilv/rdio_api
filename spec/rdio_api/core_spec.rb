@@ -27,13 +27,11 @@ describe RdioApi::Client do
 
     
     context "and methods that require authentication " do
-      
       before do
         @client.access_token = test_access_token
       end
       
       describe "'getObjectFromShortCode'" do
-
         before do
           stub_post.with(:body => {:method => 'getObjectFromShortCode', :short_code => "QisyLj0"}).
             to_return(:body => fixture("getObjectFromShortCode.json"))
@@ -46,7 +44,6 @@ describe RdioApi::Client do
       end
       
       describe "'getObjectFromUrl" do
-        
         before do
           stub_post.with(:body => {:method => 'getObjectFromUrl', :url => "/artist/James_Horner/" }).
             to_return(:body => fixture("getObjectFromUrl.json"))

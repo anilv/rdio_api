@@ -1,0 +1,82 @@
+{
+    "status" :"ok",
+    "result" : [
+	 {
+	  "baseIcon": "album/9/5/2/000000000004b259/square-200.jpg", 
+	  "releaseDate": "2010-06-14", 
+	  "userGender": "m", 
+	  "artistUrl": "/artist/Arkngthand/", 
+	  "duration": 340, 
+	  "userKey": "s27093", 
+	  "isClean": false, 
+	  "albumUrl": "/artist/Arkngthand/album/Songs_of_Ice_and_Fire_1/", 
+	  "shortUrl": "http://rd.io/x/QDaXPkftCw", 
+	  "canStream": false, 
+	  "embedUrl": "http://rd.io/e/QDaXPkftCw", 
+	  "type": "al", 
+	  "price": "9.99", 
+	  "collectionUrl": "/people/anilv/collection/", 
+	  "tracks": [
+	   {
+	    "baseIcon": "album/9/5/2/000000000004b259/square-200.jpg", 
+	    "canDownloadAlbumOnly": true, 
+	    "artistUrl": "/artist/Arkngthand/", 
+	    "duration": 340, 
+	    "album": "Songs of Ice and Fire", 
+	    "isClean": false, 
+	    "albumUrl": "/artist/Arkngthand/album/Songs_of_Ice_and_Fire_1/", 
+	    "shortUrl": "http://rd.io/x/QDaXK3laRQ", 
+	    "albumArtist": "Arkngthand", 
+	    "canStream": false, 
+	    "embedUrl": "http://rd.io/e/QDaXK3laRQ", 
+	    "type": "t", 
+	    "price": "0.99", 
+	    "trackNum": 5, 
+	    "albumArtistKey": "r350868", 
+	    "key": "t3802391", 
+	    "icon": "http://media.rd.io/album/9/5/2/000000000004b259/square-200.jpg", 
+	    "canSample": true, 
+	    "name": "A Game of Thrones", 
+	    "isExplicit": false, 
+	    "artist": "Arkngthand", 
+	    "url": "/artist/Arkngthand/album/Songs_of_Ice_and_Fire_1/track/A_Game_of_Thrones/", 
+	    "albumKey": "a307801", 
+	    "artistKey": "r350868", 
+	    "canDownload": true, 
+	    "length": 1, 
+	    "canTether": false
+	   }
+	  ], 
+	  "key": "al307801|27093", 
+	  "icon": "http://media.rd.io/album/9/5/2/000000000004b259/square-200.jpg", 
+	  "userName": "Anil V", 
+	  "canSample": true, 
+	  "name": "Songs of Ice and Fire", 
+	  "isExplicit": false, 
+	  "artist": "Arkngthand", 
+	  "url": "/artist/Arkngthand/album/Songs_of_Ice_and_Fire_1/", 
+	  "albumKey": "a307801", 
+	  "artistKey": "rl350868|27093", 
+	  "length": 1, 
+	  "trackKeys": [
+	   "t3802391"
+	  ], 
+	  "canTether": false, 
+	  "itemTrackKeys": [
+	   "t3802336", 
+	   "t3802342", 
+	   "t3802363", 
+	   "t3802373", 
+	   "t3802391", 
+	   "t3802413", 
+	   "t3802431", 
+	   "t3802432", 
+	   "t3802448", 
+	   "t3802470", 
+	   "t3802489", 
+	   "t3802494"
+	  ], 
+	  "displayDate": "Jun 14, 2010"
+	 }
+	]
+}

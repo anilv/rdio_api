@@ -1,0 +1,37 @@
+{
+    "status" :"ok",
+    "result" : [
+	 {
+	  "userName": "Anil V", 
+	  "name": "Arkngthand", 
+	  "artistKey": "r350868", 
+	  "baseIcon": "artist/no-artist-image-square.jpg", 
+	  "collectionUrl": "/people/anilv/collection/", 
+	  "shortUrl": "http://rd.io/x/QDaXLUYFxg", 
+	  "length": 1, 
+	  "hasRadio": false, 
+	  "url": "/artist/Arkngthand/", 
+	  "key": "rl350868|27093", 
+	  "userKey": "s27093", 
+	  "type": "rl", 
+	  "icon": "http://media.rd.io/artist/no-artist-image-square.jpg"
+	 }, 
+	 {
+	  "userName": "Anil V", 
+	  "name": "Beastie Boys", 
+	  "artistKey": "r232323", 
+	  "baseIcon": "artist/no-artist-image-square.jpg", 
+	  "collectionUrl": "/people/anilv/collection/", 
+	  "shortUrl": "http://rd.io/x/QDaXLUDU0Q", 
+	  "length": 16, 
+	  "hasRadio": true, 
+	  "url": "/artist/Beastie_Boys/", 
+	  "key": "rl232323|27093", 
+	  "radioKey": "rr232323", 
+	  "userKey": "s27093", 
+	  "icon": "http://media.rd.io/artist/no-artist-image-square.jpg", 
+	  "type": "rl", 
+	  "topSongsKey": "tr232323"
+	 }
+	]
+}
