@@ -1,0 +1,25 @@
+{
+    "status" :"ok",
+    "result" : {
+	 "owned": [
+	  {
+	   "ownerKey": "s27093", 
+	   "name": "RubyGem", 
+	   "baseIcon": "album/f/4/8/000000000002784f/square-200.jpg", 
+	   "ownerIcon": "user/no-user-image-square.jpg", 
+	   "owner": "Anil V", 
+	   "lastUpdated": 1312411927.0, 
+	   "shortUrl": "http://rd.io/x/QDaXL0BSKw", 
+	   "length": 3, 
+	   "url": "/people/anilv/playlists/200057/RubyGem/", 
+	   "key": "p200057", 
+	   "ownerUrl": "/people/anilv/", 
+	   "embedUrl": "http://rd.io/e/QDaXL0BSKw", 
+	   "type": "p", 
+	   "icon": "http://m.rdio.com/_is/?aid=284243,161869,161871&w=200&h=200"
+	  }
+	 ], 
+	 "collab": [], 
+	 "subscribed": []
+	}
+}
