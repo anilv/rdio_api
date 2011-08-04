@@ -1,6 +1,6 @@
-Rdio Ruby Gem
+Rdio 
 ====================
-Ruby wrapper for the Rdio.com API. Inspired from [Linkedin gem](https://github.com/pengwynn/linkedin) & [Twitter gem](https://github.com/jnunemaker/twitter). 
+Ruby wrapper for the [Rdio](http://rdio.com) API. Inspired from [Linkedin gem](https://github.com/pengwynn/linkedin) & [Twitter gem](https://github.com/jnunemaker/twitter). 
 
 
 Installation
@@ -15,7 +15,7 @@ Register for developer keys at [http://developer.rdio.com/](http://developer.rdi
 
 All the methods are exactly as in the [API docs](http://developer.rdio.com/docs/read/rest/Methods), camel cased and all the endpoints are also exactly the same.
 
-OAuth flow is not part of this gem. Recommend using [OmniAuth](https://github.com/intridea/omniauth) a fantastic gem. Also check Rdio [OAuth documentation](http://developer.rdio.com/docs/read/rest/oauth).
+OAuth flow is not part of this gem. Recommend using [OmniAuth](https://github.com/intridea/omniauth). Also check Rdio [OAuth documentation](http://developer.rdio.com/docs/read/rest/oauth).
 
 
 Usage Examples
@@ -41,13 +41,13 @@ Usage Examples
 	# Find a user by email address 
 	client.findUser(:email => "email@example.com")
 	
-	# Methods that act on behalf of a user require an access token, 
-	# [OmniAuth](https://github.com/intridea/omniauth) is best for this
+	# Methods that act on behalf of a user require an access token, OmniAuth is best for this
 	
 	# Access token can be set at initialization 
 	client = RdioApi.new(:consumer_key => CONSUMER_KEY, 
 						 :consumer_secret => CONSUMER_SECRET, 
 						 :access_token => ACCESS_TOKEN)
+						
 	# Access token can also be set at the clien't access_token instance variable
 	client.access_token = ACCESS_TOKEN
 	
