@@ -10,6 +10,8 @@ module RdioApi
         unauthenticated_request(method_sym, *arguments)
       elsif AUTHENTICATED.include?(method_sym)
         authenticated_request(method_sym, *arguments)
+      else
+        raise NoMethodError.new("Undefined method '#{method_sym}' for #{self}")
       end
     end
 
