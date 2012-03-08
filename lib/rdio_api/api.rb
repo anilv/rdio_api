@@ -42,6 +42,7 @@ module RdioApi
       :get,
       :getAlbumsForArtist,
       :getTracksForArtist,
+      :getTracksByISRC,
       :search,
       :searchSuggestions,
       :getAlbumsForArtistInCollection,
