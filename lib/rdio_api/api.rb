@@ -2,9 +2,9 @@ require 'multi_json'
 require 'hashie'
 
 module RdioApi
-  
+
   module Api
-    
+
     def method_missing(method_sym, *arguments)
       if UNAUTHENTICATED.include?(method_sym)
         unauthenticated_request(method_sym, *arguments)
@@ -18,19 +18,19 @@ module RdioApi
     def respond_to?(method)
       AUTHENTICATED.include?(method.to_sym) || UNAUTHENTICATED.include?(method.to_sym) ? true : false
     end
-    
+
     private
-      
+
     def unauthenticated_request(method_sym, *arguments)
       response = unauthenticated_connection.post do |request|
         request.body = {:method => method_sym.to_s}.merge!(Hash[*arguments.flatten])
       end
       response.body.result
     end
-    
+
     def authenticated_request(method_sym, *arguments)
       if authenticated_connection
-        response = MultiJson.decode(authenticated_connection.post(api_url, 
+        response = MultiJson.decode(authenticated_connection.post(api_url,
                                     {:method => method_sym.to_s}.merge!(Hash[*arguments.flatten])).body)['result']
         response.is_a?(Hash) ? Hashie::Mash.new(response) : response
       else
@@ -40,6 +40,8 @@ module RdioApi
 
     UNAUTHENTICATED = [
       :get,
+      :getObjectFromShortCode,
+      :getObjectFromUrl,
       :getAlbumsForArtist,
       :getTracksForArtist,
       :getTracksByISRC,
@@ -59,10 +61,8 @@ module RdioApi
       :getNewReleases,
       :getTopCharts,
       :getPlaybackToken]
-      
+
     AUTHENTICATED = [
-      :getObjectFromShortCode,
-      :getObjectFromUrl,
       :addToCollection,
       :removeFromCollection,
       :setAvailableOffline,

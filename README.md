@@ -1,6 +1,6 @@
-Rdio 
+Rdio
 ====================
-Ruby wrapper for the [Rdio](http://rdio.com) API. Inspired from [Linkedin gem](https://github.com/pengwynn/linkedin) & [Twitter gem](https://github.com/jnunemaker/twitter). 
+Ruby wrapper for the [Rdio](http://rdio.com) API. Inspired from [Linkedin gem](https://github.com/pengwynn/linkedin) & [Twitter gem](https://github.com/jnunemaker/twitter).
 
 
 Installation
@@ -31,42 +31,44 @@ Usage Examples
 
 	# Get top playlists
 	client.getTopCharts(:type => "Playlist")
-	
+
 	# Search for a query and and pass in the type
 	client.search(:query => "michael giacchino", :types => "album")
-	
+
 	# Get activity stream of a user
 	client.getActivityStream(:user => "s12345", :scope => "user")
-	
-	# Find a user by email address 
+
+	# Find a user by email address
 	client.findUser(:email => "email@example.com")
-	
+
 	# Methods that act on behalf of a user require an access token, OmniAuth is best for this
-	
-	# Access token can be set at initialization 
-	client = RdioApi.new(:consumer_key => CONSUMER_KEY, 
-						 :consumer_secret => CONSUMER_SECRET, 
+
+	# Access token can be set at initialization
+	client = RdioApi.new(:consumer_key => CONSUMER_KEY,
+						 :consumer_secret => CONSUMER_SECRET,
 						 :access_token => ACCESS_TOKEN)
-						
+
 	# Access token can also be set at the clien't access_token instance variable
 	client.access_token = ACCESS_TOKEN
-	
-	# Get info about the current user 
+
+	# Get info about the current user
 	client.currentUser
-	
+
 	# Add a friend
 	client.addFriend(:user => "s12345")
-	
+
 	# Create a Playlist
-	client.createPlaylist(:name => "RubyGem", 
-	                      :description => "Testing", 
-	                      :tracks => "t1945474, t3483614")	
+	client.createPlaylist(:name => "RubyGem",
+	                      :description => "Testing",
+	                      :tracks => "t1945474, t3483614")
 
 Available Methods
------------------	
-	
+-----------------
+
 	# Unauthenticated methods, which only require registering for developer keys
-	client.get
+    client.get
+    client.getObjectFromShortCode
+    client.getObjectFromUrl
     client.getAlbumsForArtist
     client.getTracksForArtist
     client.search
@@ -87,8 +89,6 @@ Available Methods
     client.getPlaybackToken
 
 	# Authenticated methods, which require an access token , obtained with user permission
-	client.getObjectFromShortCode
-    client.getObjectFromUrl
     client.addToCollection
     client.removeFromCollection
     client.setAvailableOffline
