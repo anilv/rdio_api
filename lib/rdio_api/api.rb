@@ -22,7 +22,7 @@ module RdioApi
     private
       
     def unauthenticated_request(method_sym, *arguments)
-      response = unauthenticated_connection.post do |request|
+      response = unauthenticated_connection.post(api_url) do |request|
         request.body = {:method => method_sym.to_s}.merge!(Hash[*arguments.flatten])
       end
       response.body.result
