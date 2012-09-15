@@ -1,6 +1,6 @@
 Rdio
 ====================
-Ruby wrapper for the [Rdio](http://rdio.com) API. Inspired from [Linkedin gem](https://github.com/pengwynn/linkedin) & [Twitter gem](https://github.com/jnunemaker/twitter).
+Ruby wrapper for the [Rdio](http://rdio.com) API. Inspired by [Linkedin gem](https://github.com/pengwynn/linkedin) & [Twitter gem](https://github.com/jnunemaker/twitter).
 
 
 Installation

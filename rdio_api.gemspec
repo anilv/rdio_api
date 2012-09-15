@@ -5,7 +5,8 @@ require "rdio_api/version"
 Gem::Specification.new do |s|
   s.name        = "rdio_api"
   s.version     = RdioApi::VERSION
-  s.authors     = ["Anil"]
+  s.authors     = ["Anil Varanasi"]
+  s.email       = ["anil@anilv.com"]
   s.homepage    = "http://github.com/anilv/rdio_api"
   s.summary     = %q{A Ruby wrapper for the Rdio API}
   s.description = %q{A Ruby wrapper for the Rdio API}
