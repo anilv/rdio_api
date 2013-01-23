@@ -57,6 +57,7 @@ module RdioApi
       :getHeavyRotation,
       :getNewReleases,
       :getTopCharts,
+      :getUserPlaylists,
       :getPlaybackToken]
 
     AUTHENTICATED = [
