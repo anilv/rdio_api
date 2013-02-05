@@ -46,10 +46,13 @@ Usage Examples
 	# Access token can be set at initialization
 	client = RdioApi.new(:consumer_key => CONSUMER_KEY,
 						 :consumer_secret => CONSUMER_SECRET,
-						 :access_token => ACCESS_TOKEN)
+						 :access_token => ACCESS_TOKEN,
+						 :access_secret => ACCESS_SECRET)
 
-	# Access token can also be set at the clien't access_token instance variable
+  # Access token and access secret can be set using the client access_token and
+  # access_secret instance variables
 	client.access_token = ACCESS_TOKEN
+	client.access_secret = ACCESS_SECRET
 
 	# Get info about the current user
 	client.currentUser

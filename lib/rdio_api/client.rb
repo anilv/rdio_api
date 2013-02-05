@@ -14,6 +14,7 @@ module RdioApi
       @consumer_key    = options[:consumer_key]
       @consumer_secret = options[:consumer_secret]
       @access_token    = options[:access_token]
+      @access_secret   = options[:access_secret]
     end
     
     private
@@ -24,6 +25,23 @@ module RdioApi
       params = {}
       params[:consumer_key] = @consumer_key 
       params[:consumer_secret] = @consumer_secret 
+
+      initialize_connection(params)
+    end
+    
+    # Sets the access token to make authenticated calls
+    
+    def authenticated_connection
+      params = {}
+      params[:consumer_key] = @consumer_key 
+      params[:consumer_secret] = @consumer_secret 
+      params[:token] = @access_token 
+      params[:token_secret] = @access_secret 
+
+      initialize_connection(params)
+    end
+
+    def initialize_connection(params) 
       @connection ||= Faraday.new(:url => api_url) do |builder|
         builder.use Faraday::Request::OAuth, params
         builder.use Faraday::Request::UrlEncoded
@@ -31,12 +49,6 @@ module RdioApi
         builder.use Faraday::Response::ParseJson
         builder.adapter Faraday.default_adapter
       end
-    end
-    
-    # Sets the access token to make authenticated calls
-    
-    def authenticated_connection
-      @access_token
     end
 
     # Base URL for api requests
